@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etSinicial"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/s_inicial"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etVelocidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etVelocidade"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/velocidade"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etTempo"
+        app:layout_constraintStart_toStartOf="@+id/etSinicial"
+        app:layout_constraintTop_toBottomOf="@+id/etSinicial" />
+
+    <EditText
+        android:id="@+id/etTempo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:hint="@string/tempo"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintStart_toStartOf="@+id/etVelocidade"
+        app:layout_constraintTop_toBottomOf="@+id/etVelocidade" />
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="298dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:text="@string/calcular"
+        app:layout_constraintBottom_toTopOf="@+id/tvRes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTempo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

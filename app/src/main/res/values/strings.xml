@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EqMovUnit</string>
+    <string name="s_inicial">S Inicial (m)</string>
+    <string name="velocidade">Velocidade (m/s)</string>
+    <string name="tempo">Tempo (m)</string>
+    <string name="s_final">S =</string>
+    <string name="calcular">Calcular</string>
+</resources>
